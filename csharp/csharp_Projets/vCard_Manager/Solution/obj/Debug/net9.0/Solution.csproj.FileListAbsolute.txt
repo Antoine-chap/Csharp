@@ -1,0 +1,15 @@
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\bin\Debug\net9.0\Solution.exe
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\bin\Debug\net9.0\Solution.deps.json
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\bin\Debug\net9.0\Solution.runtimeconfig.json
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\bin\Debug\net9.0\Solution.dll
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\bin\Debug\net9.0\Solution.pdb
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\Solution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\Solution.AssemblyInfoInputs.cache
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\Solution.AssemblyInfo.cs
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\Solution.csproj.CoreCompileInputs.cache
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\Solution.sourcelink.json
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\Solution.dll
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\refint\Solution.dll
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\Solution.pdb
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\Solution.genruntimeconfig.cache
+C:\Users\ashur\stock\Csharp\csharp\csharp_Projets\vCard_Manager\Solution\obj\Debug\net9.0\ref\Solution.dll
