@@ -4,30 +4,46 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace
+namespace vCard_Manager
 {
     public class VCard
     {
-        public void AddContact(List<Contact> contacts, string name, string firstname, string phone, string mail)
+        public Contact AddContact(List<Contact> contacts, string name, string firstname, string phone, string mail)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
                 throw new ArgumentNullException("Le nom ne peut pas être vide");
             }
+            if (string.IsNullOrWhiteSpace(firstname))
+            {
+                throw new ArgumentNullException("Le prénom ne peut pas être vide");
+            }
+            if (string.IsNullOrWhiteSpace(phone))
+            {
+                throw new ArgumentNullException("Le numéro de téléphone ne peut pas être vide");
+            }
+            if (string.IsNullOrWhiteSpace(mail))
+            {
+                throw new ArgumentNullException("L'email ne peut pas être vide");
+            }
 
-            Contact newContact = new Contact(name, phone, mail);
+
+            Contact newContact = new Contact(name, firstname, phone, mail);
 
             contacts.Add(newContact);
 
-            Console.WriteLine($"Contact ajouté : {newContact}");
+            return newContact;
+
+
+
+            Console.WriteLine($"Contact ajouté : {newContact.Name} {newContact.FirstName}");
         }
 
-        private string ConvertToVCard(Contact contact)
+        public string ConvertToVCF(Contact contact)
         {
             StringBuilder vcard = new StringBuilder();
 
             vcard.AppendLine("BEGIN:VCARD");
-            vcard.AppendLine("VERSION:3.0");
             vcard.AppendLine($"FN:{contact.Name} {contact.FirstName}");
 
 
@@ -44,7 +60,23 @@ namespace
 
             return vcard.ToString();
         }
-        
-        public void ExportToVCF(List<Contact> contacts, string roadFile)
+
+        public void CreateFileIfNecessary(string roadFile)
+        {
+            try
+            {
+                if (!Directory.Exists(roadFile))
+                {
+                    Directory.CreateDirectory(roadFile);
+                    Console.WriteLine($"Dossier créé : {roadFile}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erreur lors de la création du dossier : {ex.Message}");
+            }
+        }
     }
+
+    // public void ExportToVCF(List<Contact> contacts, string roadFile)
 }
